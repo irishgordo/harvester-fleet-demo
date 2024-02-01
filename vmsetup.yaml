@@ -8,7 +8,8 @@ spec:
   insecureSkipTLSVerify: false
   paths:
     - "/vm-workload"
-  repo: https://github.com/ibrokethecloud/harvester-fleet-demo
+  pollingInterval: 10s
+  repo: https://github.com/irishgordo/harvester-fleet-demo
   targetNamespace: default
   targets:
     - clusterSelector: {}
