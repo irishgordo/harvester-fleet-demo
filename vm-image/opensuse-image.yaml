@@ -20,4 +20,4 @@ spec:
     migratable: "true"
     numberOfReplicas: "3"
     staleReplicaTimeout: "30"
-  url: http://192.168.9.163:5000/openSUSE-Leap-15.4.x86_64-NoCloud.qcow2
+  url: http://192.168.12.22/openSUSE-Leap-15.4.x86_64-NoCloud.qcow2

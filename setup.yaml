@@ -10,6 +10,7 @@ spec:
     - "/vm-network"
     - "/vm-image"
     - "/keypair"
+    - "/cloudinit.yaml"
   pollingInterval: 10s
   repo: https://github.com/irishgordo/harvester-fleet-demo
   targetNamespace: default

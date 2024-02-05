@@ -1,0 +1,13 @@
+apiVersion: node.harvesterhci.io/v1beta1
+kind: CloudInit
+metadata:
+  name: ssh-access
+spec:
+  matchSelector: {}
+  filename: 99_ssh.yaml
+  contents: |
+    stages:
+      network:
+        - authorized_keys:
+            rancher:
+              - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBzZT+yXkr28BJzki4WdisefgyR1hKMXWlJCd9KfajEm michael.russell@suse.com
