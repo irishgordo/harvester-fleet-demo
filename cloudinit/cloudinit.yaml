@@ -2,6 +2,7 @@ apiVersion: node.harvesterhci.io/v1beta1
 kind: CloudInit
 metadata:
   name: ssh-access
+  namespace: default
 spec:
   matchSelector: {}
   filename: 99_ssh.yaml
@@ -11,3 +12,95 @@ spec:
         - authorized_keys:
             rancher:
               - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBzZT+yXkr28BJzki4WdisefgyR1hKMXWlJCd9KfajEm michael.russell@suse.com
+
+# ---
+# apiVersion: node.harvesterhci.io/v1beta1
+# kind: CloudInit
+# metadata:
+#   name: grubcustom
+# spec:
+#   matchSelector: {}
+#   filename: grubcustom
+#   contents: |
+#     hello there
+# ---
+# apiVersion: node.harvesterhci.io/v1beta1
+# kind: CloudInit
+# metadata:
+#   name: 99settings
+# spec:
+#   matchSelector: {}
+#   filename: 99_settings.yaml
+#   contents: |
+#     hello there
+# ---
+# apiVersion: node.harvesterhci.io/v1beta1
+# kind: CloudInit
+# metadata:
+#   name: 90custom
+# spec:
+#   matchSelector: {}
+#   filename: 90_custom.yaml
+#   contents: |
+#     hello there
+# ---
+# apiVersion: node.harvesterhci.io/v1beta1
+# kind: CloudInit
+# metadata:
+#   name: elemental.config
+# spec:
+#   matchSelector: {}
+#   filename: elemental.config
+#   contents: |
+#     hello there
+# ---
+# apiVersion: node.harvesterhci.io/v1beta1
+# kind: CloudInit
+# metadata:
+#   name: grubenv
+# spec:
+#   matchSelector: {}
+#   filename: grubenv
+#   contents: |
+#     hello there
+# ---
+# apiVersion: node.harvesterhci.io/v1beta1
+# kind: CloudInit
+# metadata:
+#   name: harvesterconfig
+# spec:
+#   matchSelector: {}
+#   filename: harvester.config
+#   contents: |
+#     hello there
+# ---
+# apiVersion: node.harvesterhci.io/v1beta1
+# kind: CloudInit
+# metadata:
+#   name: install
+# spec:
+#   matchSelector: {}
+#   filename: install
+#   contents: |
+#     hello there
+# ---
+# apiVersion: node.harvesterhci.io/v1beta1
+# kind: CloudInit
+# metadata:
+#   name: consolelogoverwrite
+# spec:
+#   matchSelector: {}
+#   filename: install/console.log
+#   contents: |
+#     hello there
+
+# ---
+# apiVersion: node.harvesterhci.io/v1beta1
+# kind: CloudInit
+# metadata:
+#   name: consolelogoverwrite
+# spec:
+#   matchSelector: {}
+#   filename: /oem/install/console.log
+#   contents: |
+#     hello there

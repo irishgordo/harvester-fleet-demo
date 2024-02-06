@@ -1,0 +1,10 @@
+# ---
+# apiVersion: node.harvesterhci.io/v1beta1
+# kind: CloudInit
+# metadata:
+#   name: consolelogoverwrite
+# spec:
+#   matchSelector: {}
+#   filename: /oem/install/console.log
+#   contents: |
+#     hello there
