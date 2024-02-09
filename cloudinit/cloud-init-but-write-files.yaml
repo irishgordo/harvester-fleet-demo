@@ -1,0 +1,15 @@
+apiVersion: node.harvesterhci.io/v1beta1
+kind: CloudInit
+metadata:
+  name: write-authorized-key-file
+  namespace: default
+spec:
+  matchSelector:
+    vmnode: harvester-node-1
+  filename: 99_write_authorizedkeys_file.yaml
+  contents: |
+    stages:
+      fs:
+        - name: "write authorized_keys file"
+          commands:
+            - echo "" > /home/rancher/.ssh/authorized_keys

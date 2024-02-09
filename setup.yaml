@@ -7,7 +7,7 @@ spec:
   branch: main
   insecureSkipTLSVerify: false
   paths:
-    - "/cloudinit"
+    - "/vm-image"
   pollingInterval: 300s
   repo: https://github.com/irishgordo/harvester-fleet-demo
   targetNamespace: default
