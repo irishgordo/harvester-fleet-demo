@@ -8,6 +8,7 @@ metadata:
     harvesterhci.io/image-type: raw_qcow2
     harvesterhci.io/imageDisplayName: opensuse
     harvesterhci.io/os-type: openSUSE
+    newlabel: a-very-new-label-added
   namespace: default
 spec:
   checksum: ""
