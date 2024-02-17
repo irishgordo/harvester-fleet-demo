@@ -10,6 +10,7 @@ metadata:
     harvesterhci.io/os-type: openSUSE
     newlabel: a-very-new-label-added
     additionallabel: extra-new-label
+    extra: newhere
   namespace: default
 spec:
   description: "hello there from description..."
