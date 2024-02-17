@@ -9,8 +9,10 @@ metadata:
     harvesterhci.io/imageDisplayName: opensuse
     harvesterhci.io/os-type: openSUSE
     newlabel: a-very-new-label-added
+    additionallabel: extra-new-label
   namespace: default
 spec:
+  description: "hello there from description..."
   checksum: ""
   displayName: opensuse
   pvcName: ""
